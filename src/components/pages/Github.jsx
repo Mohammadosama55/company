@@ -2,12 +2,6 @@
 import React, { useEffect, useState, useMemo } from 'react';
 import { useLoaderData } from 'react-router-dom';
 
-export async function loader() {
-  const res = await fetch('https://api.github.com/users/Mohammadosama55/repos?per_page=100');
-  if (!res.ok) throw new Error('Failed to fetch repos');
-  const data = await res.json();
-  return data;
-}
 
 export default function Github() {
   const repos = useLoaderData();

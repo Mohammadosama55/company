@@ -9,6 +9,7 @@ export default function Header() {
         { to: '/about', label: 'About' },
         { to: '/contact', label: 'Contact' },
         { to: '/github', label: 'GitHub', external: true },
+        
     ];
 
     return (
@@ -17,11 +18,15 @@ export default function Header() {
                 <div className="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between">
                     {/* Logo */}
                     <Link to="/" className="flex items-center">
-                        <img
-                            src="https://images.unsplash.com/photo-1643729041862-bf411535a4d7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjR8fGxvZ28lMjBkZXZlbG9wZXJ8ZW58MHx8MHx8fDA%3D"   // modern monogram
-                            alt="Placeholder logo"
-                            className="h-10"
-                        />
+                        <svg
+                            className="mr-3 h-16 w-16 transition-transform duration-300 group-hover:scale-105"
+                            viewBox="0 0 40 40"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <rect width="40" height="40" rx="8" fill="#3B82F6" />
+                            <path d="M20 10L30 20L20 30L10 20L20 10Z" fill="white" />
+                        </svg>
                     </Link>
 
                     {/* Mobile menu button */}
@@ -66,7 +71,7 @@ export default function Header() {
                     {/* Auth buttons */}
                     <div className="hidden lg:flex lg:items-center lg:space-x-3">
                         <Link
-                            to="#"
+                            to="/login"
                             className="rounded-lg px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
                         >
                             Log in

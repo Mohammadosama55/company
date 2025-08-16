@@ -10,3 +10,22 @@ Currently, two official plugins are available:
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+reactRouter/
+├── public/
+├── src/
+│   ├── App.jsx
+│   ├── main.jsx
+│   ├── App.css, index.css
+│   ├── components/
+│   │   ├── Header/
+│   │   ├── Footer/
+│   │   ├── Home/
+│   │   │   ├── Home.jsx
+│   │   │   └── About.jsx
+│   │   ├── pages/
+│   │   │   ├── Contact.jsx
+│   │   │   └── Github.jsx
+│   ├── assets/
+├── package.json
+├── vite.config.js
+└── README.md
